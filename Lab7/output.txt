@@ -1,0 +1,9 @@
+mb insert: 0.0015677953
+mg insert: 0.0000008196
+mdh insert: 0.0000010370
+mb at: 0.0011301311
+mg at: 0.0000002064
+mdh at: 0.0000002945
+mb erase: 0.0012121089
+mg erase: 0.0000002236
+mdh erase: 0.0000003108

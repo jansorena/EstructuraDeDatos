@@ -1,0 +1,58 @@
+import matplotlib.pyplot as plt
+
+import pandas as pd
+
+data = pd.read_csv('plot.csv',sep=',')
+x = data['n']
+
+plt.figure()
+plt.plot(x, data['insert1'], 'bo-', label='MapB')
+plt.plot(x, data['insert2'], 'ro-', label='MapG')
+plt.plot(x, data['insert3'], 'ko-', label='MapDH')
+plt.xlabel('n')
+plt.ylabel('t(n)')
+plt.title('Analisis experimental funcion insert')
+plt.xlabel('n')
+plt.ylabel('t(n)')
+plt.legend()
+
+plt.figure()
+plt.plot(x, data['at1'], 'bo-', label='MapB')
+plt.plot(x, data['at2'], 'ro-', label='MapG')
+plt.plot(x, data['at3'], 'ko-', label='MapDH')
+plt.xlabel('n')
+plt.ylabel('t(n)')
+plt.title('Analisis experimental funcion at')
+plt.xlabel('n')
+plt.ylabel('t(n)')
+plt.legend()
+
+plt.figure()
+plt.plot(x, data['erase1'], 'bo-', label='MapB')
+plt.plot(x, data['erase2'], 'ro-', label='MapG')
+plt.plot(x, data['erase3'], 'ko-', label='MapDH')
+plt.xlabel('n')
+plt.ylabel('t(n)')
+plt.title('Analisis experimental funcion erase')
+plt.xlabel('n')
+plt.ylabel('t(n)')
+plt.legend()
+# plt.figure()
+# plt.plot(x, data['SelectionSort'], 'bo-', label='SelectionSort')
+# plt.xlabel('n')
+# plt.ylabel('t(n)')
+# plt.title('Analisis experimental algoritmos ordenamiento')
+# plt.xlabel('n')
+# plt.ylabel('t(n)')
+# plt.legend()
+#
+# plt.figure()
+# plt.plot(x, data['HeapSort'], 'ro-', label='HeapSort')
+# plt.xlabel('n')
+# plt.ylabel('t(n)')
+# plt.title('Analisis experimental algoritmos ordenamiento')
+# plt.xlabel('n')
+# plt.ylabel('t(n)')
+# plt.legend()
+
+plt.show()
